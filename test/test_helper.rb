@@ -1,15 +1,21 @@
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
-require 'rails/test_help'
+require 'test_helper'
 
-class ActiveSupport::TestCase
-  fixtures :all
+class SessionsHelperTest < ActionView::TestCase
 
-  # Returns true if a test user is logged in.
-  def is_logged_in?
-    !session[:user_id].nil?
+  def setup
+    @user = users(:michael)
+    remember(@user)
   end
-end
 
-  # Add more helper methods to be used by all tests here...
+  test "current_user returns right user when session is nil" do
+    assert_equal @user, current_user
+    assert is_logged_in?
+  end
+
+  test "current_user returns nil when remember digest is wrong" do
+    @user.update_attribute(:remember_digest, User.digest(User.new_token))
+    assert_nil current_user
+  end
 end
