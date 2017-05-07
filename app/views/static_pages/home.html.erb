@@ -1,14 +1,12 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<link href="https://fonts.googleapis.com/css?family=League+Script|Open+Sans:400,700" rel="stylesheet">
 
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+<div class="center jumbotron" style="background: url(https://68.media.tumblr.com/08596b4ff7eb925759bb89f98b215115/tumblr_ooxl7hLs2H1s0u20po1_1280.png);box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);height:400px;">
+  <h1 style="color: white;font-family: 'League Script', cursive;text-shadow: 1px 1px 4px rgba(0,0,0,0.9);margin-top: 70px; font-weight: bolder; font-size: 80px;">Welcome to Soroity Saver!</h1>
+
+  <h2 style="color:white; margin-top: 13px;">
+    Sister database created for the sisters of Pace University's Sigma Delta Tau Delta Theta Chapter
   </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Create a sister account!", signup_path, class: "link lhover" %>
+  <%= link_to "Sign in to my account!", login_path, class: "link lhover" %>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>

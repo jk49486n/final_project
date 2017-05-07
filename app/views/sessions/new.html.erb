@@ -1,5 +1,6 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
+<link href="https://fonts.googleapis.com/css?family=League+Script|Open+Sans:400,700" rel="stylesheet">
+<h1 style="font-family: 'League Script', cursive; font-weight: bolder; font-size: 60px;"">Log in</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -16,9 +17,9 @@
         <span>Remember me on this computer</span>
       <% end %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+     <%= f.submit "Log in", class: "link lhover" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p><br>Don't have an account? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>

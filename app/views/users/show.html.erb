@@ -1,11 +1,32 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-5">
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+        <%= @user.name %> 
+       </h1>
+       <p style="margin-left: 120px; font-size: 20px;">
+       	<b>Email</b>: 
+       	<%= @user.email %><br>
+        <b>Cell Phone Number</b>:
+        <%= @user.cell_number %><br>
+        <b>Grade in School</b>:
+        <%= @user.school_grade %><br>
+        <b>Major</b>:
+        <%= @user.school_major %><br>
+       	<b>Current status</b>:
+        <%= @user.greek_status %><br>
+        <b>Position(s)</b>:
+        <%= @user.greek_position %><br>
+        <b>Class</b>:
+        <%= @user.greek_class %><br>
+        <b>Big</b>:
+        <%= @user.greek_big %><br>
+        <b>Little</b>:
+        <%= @user.greek_little %>
+
+      </p>
     </section>
   </aside>
 </div>

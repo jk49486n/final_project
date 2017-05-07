@@ -1,3 +1,30 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+	
+	.link{
+	    background-color: white;
+	    margin-top: 5px;
+	    border: 2px solid #3C6E71;
+	    color: #3C6E71;;
+	    width: 200px;
+	    height: 45px;
+	    text-align: center;
+	    vertical-align: middle;
+	    line-height: 45px;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    border-radius: 7px;
+	    font-family: 'Open Sans', sans-serif;
+
+	    -webkit-transition-duration: 0.4s; /* Safari */
+	    transition-duration: 0.4s;
+	    cursor: pointer;
+	    font-family: 'Open Sans', sans-serif; 
+	    text-transform: bold;
+	}
+
+	.link:hover {
+		background-color: #3C6E71;
+		color: white;
+		font-weight: bold;
+	}

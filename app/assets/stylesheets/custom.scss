@@ -46,7 +46,6 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -75,6 +74,7 @@ p {
     text-decoration: none;
   }
 }
+
 
 /* footer */
 
@@ -199,4 +199,8 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
   }
+
+
+
+
 } 

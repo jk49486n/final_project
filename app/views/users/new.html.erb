@@ -1,24 +1,59 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<link href="https://fonts.googleapis.com/css?family=League+Script|Open+Sans:400,700" rel="stylesheet">
+<h1 style="font-family: 'League Script', cursive; font-weight: bolder; font-size: 60px;">Create your sister account</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user, url: signup_path) do |f| %>
       <%= render 'shared/error_messages' %>
-
-      <%= f.label :name %>
+      <h2>Account Information:</h2>
+      <%= f.label :name, "Full Name:" %>
       <%= f.text_field :name, class: 'form-control' %>
 
-      <%= f.label :email %>
+      <%= f.label :email, "Email:" %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password %>
+      <%= f.label :password, "Password:" %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.label :password_confirmation, "Confirmation:" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+
+
+      <hr><h2>Personal Information:</h2>
+
+      <%= f.label :cell_number, "Cell Phone Number:" %>
+      <%= f.text_field :cell_number, class: 'form-control' %>
+
+      <%= f.label :school_grade, "Current Grade:" %>
+      <%= f.text_field :school_grade, class: 'form-control' %>
+
+      <%= f.label :school_major, "Major:" %>
+      <%= f.text_field :school_major, class: 'form-control' %>
+
+
+
+<hr><h2>Sorority Information:</h2>
+
+      <%= f.label :greek_status, "Current status:" %>
+      <%= f.text_field :greek_status, class: 'form-control' %>
+
+      <%= f.label :greek_class, "Class:" %>
+      <%= f.text_field :greek_class, class: 'form-control' %>
+
+      <%= f.label :greek_position, "Position:" %> <Small>(if applicable)</Small>
+      <%= f.text_field :greek_position, class: 'form-control' %>
+
+      <%= f.label :greek_big, "Big:" %>
+      <%= f.text_field :greek_big, class: 'form-control' %>
+
+      <%= f.label :greek_little, "Little:" %> <Small>(if applicable)</Small>
+      <%= f.text_field :greek_little, class: 'form-control' %>
+
+
+
+      <%= f.submit "Create my account", class: "link lhover" %>
     <% end %>
   </div>
 </div>
