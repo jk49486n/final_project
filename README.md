@@ -1,24 +1,3 @@
-# README
+Sorority Saver
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application is designed for the sisters, advisor and e-board members of Sigma Delta Tau Delta Theta chapter to have an active database and record of all current and past sisters of the chapter. It includes a log in so only sisters may view the lists and edit their own information. Only admins can delete sisters. 
